@@ -42,6 +42,7 @@ export class AppComponent implements OnInit {
       closeButton : true,
       progressBar : true
     });
+    // this.onReset();
   }
   startLoading() {
     this.loadingBar.start();
