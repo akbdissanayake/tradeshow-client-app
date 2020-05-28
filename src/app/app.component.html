@@ -1,0 +1,167 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="background">
+  <ngx-loading-bar color="#ffffff" height="3px"></ngx-loading-bar>
+  <div style="text-align:center"><br>
+    <img width="300" alt="hire-tech" src="assets/images/HIREtech-Wordmark-White-RGB.png"/>
+  </div>
+  <br>
+  <div>
+    <div class="container">
+      <div class="row" [@header]="'in'">
+        <div class="mx-auto col-sm-11">
+          <!-- form info -->
+          <div class="card">
+            <div class="card-body">
+              <form class="form" role="form" autocomplete="off" [formGroup]="formGroup" (validSubmit)="onSubmit()">
+                <div class="form-group row required">
+                  <label for="firstName" class="col-lg-2 form-control-label"><b>First name</b></label>
+                  <div class="col-lg-10">
+                    <input class="form-control" name="firstName" id="firstName" formControlName="firstName" type="text"
+                           placeholder="First name" [required]="true" autocomplete="off"/>
+                    <bfv-messages></bfv-messages>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="lastName" class="col-lg-2 form-control-label"><b>Last name</b></label>
+                  <div class="col-lg-10">
+                    <input class="form-control" name="lastName" id="lastName" formControlName="lastName" type="text"
+                           placeholder="Last name" autocomplete="off"/>
+                  </div>
+                </div>
+                <div class="form-group row required">
+                  <label for="email" class="col-lg-2 form-control-label"><b>Email</b></label>
+                  <div class="col-lg-10">
+                    <input class="form-control" name="email" id="email" placeholder="Email" formControlName="email"
+                           [required]="true" autocomplete="off"/>
+                    <bfv-messages></bfv-messages>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="phoneNumber" class="col-lg-2 form-control-label"><b>Phone</b></label>
+                  <div class="col-lg-10">
+                    <input class="form-control" name="phoneNumber" id="phoneNumber" type="text"
+                           formControlName="phoneNumber" placeholder="Phone#" mask="(000) 000-0000" autocomplete="off">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="title" class="col-lg-2 form-control-label"><b>Title</b></label>
+                  <div class="col-lg-10">
+                    <input name="title" id="title" class="form-control" formControlName="title" type="text"
+                           placeholder="Title" autocomplete="off">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="organization" class="col-lg-2 form-control-label"><b>Organization</b></label>
+                  <div class="col-lg-10">
+                    <input name="organization" id="organization" class="form-control" formControlName="organization"
+                           type="text" placeholder="Organization" autocomplete="off">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col text-center">
+                      <b>Who talked with you today?</b>
+                    </div>
+                  </div>
+                  <span style="margin-left: 0.5em"></span>
+                  <div class="col text-center">
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup formControlName="salesInitials">
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option1" autocomplete="off" value="Clicked as Ad"
+                               (click)="formGroup.controls['salesInitials'].setValue('Clicked_as_Ad')"
+                               ngbButton> Clicked_as_Ad
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option2" autocomplete="off" value="Ezrie"
+                               (click)="formGroup.controls['salesInitials'].setValue('Ezrie')"
+                               ngbButton> Ezrie
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option3" autocomplete="off" value="Marla"
+                               (click)="formGroup.controls['salesInitials'].setValue('Marla')"
+                               ngbButton> Marla
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option4" autocomplete="off" value="Travis"
+                               (click)="formGroup.controls['salesInitials'].setValue('Travis')"
+                               ngbButton> Travis
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option5" autocomplete="off" value="Mike"
+                               (click)="formGroup.controls['salesInitials'].setValue('Mike')"
+                               ngbButton> Mike
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                    </div>
+                  </div>
+                  <span style="margin-left: 0.5em"></span>
+                  <div class="col text-center">
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup formControlName="salesInitials">
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option6" autocomplete="off" value="Ryan"
+                               (click)="formGroup.controls['salesInitials'].setValue('Ryan')"
+                               ngbButton> Ryan
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option7" autocomplete="off" value="Amir"
+                               (click)="formGroup.controls['salesInitials'].setValue('Amir')"
+                               ngbButton> Amir
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option8" autocomplete="off" value="Carli"
+                               (click)="formGroup.controls['salesInitials'].setValue('Carli')"
+                               ngbButton> Carli
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                      <label class="btn btn-outline-info" ngbButtonLabel>
+                        <input type="radio" name="salesInitials" id="option9" autocomplete="off" value="Rob"
+                               (click)="formGroup.controls['salesInitials'].setValue('Carli')"
+                               ngbButton> Rob
+                      </label>
+                      <span style="margin-left: 0.5em"></span>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col text-center">
+                      <button class="btn btn-success" type="submit">Send</button>
+                      <span style="margin-left: 0.5em"></span>
+                      <button class="btn btn-secondary" type="button" (click)="onReset()">Clear</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spinner-grow text-dark" *ngIf="loader"></div>
+                <div class="transparent-overlay" *ngIf="loader"></div>
+
+<!--                <div class="row">-->
+<!--                  <div class="col-12">-->
+<!--                        <pre>-->
+<!--                          {{formGroup.value|json}}-->
+<!--                        </pre>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+              </form>
+            </div>
+          </div>
+          <!-- /form info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

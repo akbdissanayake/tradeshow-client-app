@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/utilities/clearfix";
+@import "~bootstrap/scss/utilities/shadows";
+@import '~ngx-toastr/toastr-bs4-alert';
+
+
+.background{
+  position: relative;
+  display: table;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  background-image: linear-gradient(to left, #0a326d 0%, #036cad 90%);
+}
+
+.form-group.row.required .form-control-label:after{
+  content:"*";
+  color:red;
+}
+
+.button{
+  padding: 5px 20px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.spinner-grow {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.transparent-overlay {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.text-dark{
+  width: 5rem;
+  height: 5rem;
+}
+
+
