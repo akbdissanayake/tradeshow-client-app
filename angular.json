@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularTradeshow"
+    }
+  },
+  "defaultProject": "AngularTradeshow",
+  "cli": {
+    "analytics": false
+  }
 }
